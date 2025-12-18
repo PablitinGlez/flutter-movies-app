@@ -1,9 +1,8 @@
 import 'package:cinemapedia/domain/entities/movie.dart';
 
 abstract class MoviesDatasource {
-  //no kiero crear instancias de ella
-  //este clasdefine que es lo que los metos que estas clases van a tener para traer esta data
-  //getnowplaingmovies
+  //aca llamos al datasource para que nos traiga la data de peliculas 
+  //ejemplo quiero la lista de peliculas que estan en cines
 
   Future<List<Movie>> getNowPlaying({int page = 1});
 }
