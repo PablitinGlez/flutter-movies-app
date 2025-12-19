@@ -1,6 +1,6 @@
 import 'package:cinemapedia/domain/entities/movie.dart';
 
-abstract class MoviesDatasource {
+abstract class MoviesRepository {
   //aca llamos al datasource para que nos traiga la data de peliculas 
   //ejemplo quiero la lista de peliculas que estan en cines
 
