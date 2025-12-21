@@ -2,6 +2,8 @@ import 'package:cinemapedia/domain/datasources/movies_datasource.dart';
 import 'package:cinemapedia/domain/entities/movie.dart';
 import 'package:cinemapedia/domain/repositories/movies_repository.dart';
 
+
+//para cambiar los origenes de datos
 class MovieRepositoryImpl extends MoviesRepository{
   
   final MoviesDatasource datasource;
@@ -11,11 +13,5 @@ class MovieRepositoryImpl extends MoviesRepository{
   @override
   Future<List<Movie>> getNowPlaying({int page = 1}) {
     return datasource.getNowPlaying(page: page);
-
-
-
   }
-
-
-
 }
